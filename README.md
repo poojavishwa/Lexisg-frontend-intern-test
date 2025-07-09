@@ -1,12 +1,20 @@
-# React + Vite
+To Run this use - npm run dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+How Citation Linking Was Handled - 
+When the user types a legal question and clicks Submit, the app simulates a response with:
 
-Currently, two official plugins are available:
+A legal answer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A list of citations
 
-## Expanding the ESLint configuration
+Clicking a citation:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Opens a modal window.
+
+Therefore, instead of showing the PDF inside the modal, the modal displays a message and provides a button to open the PDF in a new browser tab.
+
+In a production system:
+
+I integrate PDF.js or similar tools to render the PDF directly in-app.
+
+Deploye Link - https://lexisg-frontend-intern-test-4rmae2ojf.vercel.app/
